@@ -1,0 +1,114 @@
+
+/* About section background */
+
+.about-section h2 {
+    font-size: 55px;
+    margin-bottom: 0em;
+    color: #333;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background:rgba(78, 73, 73, 0.77)
+}
+.director-info .images {
+    display: flex;
+    =
+    align-items: left;
+}
+
+.director-info img.director-image {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    border-radius: 0%;
+    margin-bottom: 4em;
+    margin-right: 20px;
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the images to the left side */
+}
+
+.right-images img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+.director-info h3 {
+    font-size: 30px;
+    margin: 10px;
+    line-height: 10;
+    padding: 0px; /* Added padding */
+    font-family: 'Noto Sans JP', serif;
+}
+.about-section p {
+    font-size: 30px;
+    line-height: 2;
+    padding: 0px; /* Added padding */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 5px solid #ccc;
+    padding: 20px;
+    vertical-align: center;
+}
+
+.table img {
+    width: 50%;
+    height: auto;
+    display: block; /* Ensure images don't have extra space below them */
+    margin-bottom: 0;
+    =
+    image-orientation: center;
+}
+
+.about-section p {
+    font-size: 40px;
+    line-height: 2;
+    padding: 0;
+}
+
+.about-section h3 {
+    color: rgba(0, 0, 0, 0.77);
+    line-height: 2;
+}
+
+.about-section p {
+    color: rgba(0, 0, 0, 0.77);
+}
+.navbar {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    width: 50px;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(128, 128, 128);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+}

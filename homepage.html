@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ghibli Collection</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+ <link href="https://www.dafontfree.net/embed/bXlhbm1hci1raHlheS1yZWd1bGFyJmRhdGEvNDI2L20vMTc5NzQ5L0toeWF5LVJlZ3VsYXIudHRm" rel="stylesheet" type="text/css"/>
+ <link rel="icon" type="image/jpg" href="images/logo.jpg">
+
+<style>
+body {
+    margin: 0%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.top-image, .side-image, .footer-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('images/header 1.png');
+}
+
+.top-image::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(118, 162, 36, 0.422);
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+
+.top-image:hover::before {
+ opacity: 0.5;
+}
+
+.side-images {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+}
+
+.side-image:hover {
+    transform: scale(1.01); 
+    transition: transform 0.3s ease; 
+}
+
+.side-image::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(17, 46, 13, 0.388);
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+
+.side-image:hover::before {
+ opacity: 3;
+}
+
+.side-image {
+    position: absolute;
+    top: 0;
+    width: 49.3%;
+    height: 100%;
+    padding-bottom: 100px;
+    padding-right: 5px;
+}
+
+.side-image:first-child {
+    left: 0;
+    margin-left: 0.2%;
+    background-image: url('images/tototro 1.png');
+}
+
+.side-image:nth-child(2){
+    left: 50.1%;
+    margin-left: 0.01%;
+    background-image: url('images/ponyo 1.png');
+}
+
+.side-image:nth-child(3) {
+    left: 0;
+    margin-left: 0.2%;
+    background-image: url('images/spirited 1.png');
+    margin-top: 506px;
+}
+
+.side-image:last-child {
+    left: 50.1%;
+    margin-left: 0.01%;
+    background-image: url('images/grave 1.png');
+    margin-top: 506px;
+}
+
+.footer-image {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 92px;
+    background-image: url('images/footer 1.png');
+    margin-top: 813.5px;
+}
+
+.footer-image::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(118, 162, 36, 0.422);
+ opacity: 0;
+ transition: opacity 0.3s;
+}
+
+.footer-image:hover::before {
+ opacity: 0.5;
+}
+
+/* texts on image */
+.text1, .text11, .text2, .text3, .text33, .text4, .text5, .text6, .text7, .text8, .text9, .text99, .text10, .text111 {
+ position: absolute;
+ color: white;
+}
+
+/* texts on top of the header image */
+.text1 {
+ font-family: Meddon;
+ font-size: 52px;
+ font-weight: bold;
+ font-weight: lighter;
+ top: 47%;
+ left: 52%;
+ transform: translate(-50%, -50%);
+}
+
+.text11 {
+ font-family: Meddon;
+ font-size: 56px;
+ font-weight: bold;
+ font-weight: lighter;
+ top: 47%;
+ left: 45%;
+ transform: translate(-50%, -50%);
+}
+
+.text2 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-style: italic;
+ font-size: 21px;
+ top: 77%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+/* texts on top of the side image */
+.text3 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 28%;
+ left: 25%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text33 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 35.5%;
+ left: 18%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text4 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 22px;
+ top: 43%;
+ left: 23.5%;
+ transform: translate(-50%, -50%);
+}
+
+.text5 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 28%;
+ left: 17%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text6 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 22px;
+ top: 35%;
+ left: 23.5%;
+ transform: translate(-50%, -50%);
+}
+
+.text7 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 28%;
+ left: 27%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text8 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 22px;
+ top: 35%;
+ left: 23.5%;
+ transform: translate(-50%, -50%);
+}
+
+.text9 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 28%;
+ left: 25.5%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text99 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 35px;
+ top: 35.5%;
+ left: 18%;
+ transform: translate(-50%, -50%);
+ font-weight: 550;
+}
+
+.text10 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 22px;
+ top: 43%;
+ left: 23.5%;
+ transform: translate(-50%, -50%);
+}
+
+.text111 {
+ font-family: "myanmar-khyay-regular", sans-serif;
+ letter-spacing: 3px;
+ font-size: 19px;
+ font-style: italic;
+ text-align: center;
+ top: 50.8%;
+ left: 50%;
+ width: 750px;
+ transform: translate(-50%, -50%);
+}
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="top-image">
+            <div class="text1">hibli</div>
+            <div class="text11">G</div>
+            <div class="text2">collection</div>
+        </div>
+        <div class="side-images">
+            <div class="side-image">
+                <a href="totoro.html">
+                <div class="text3">MY  NEIGHBOR</div>
+                <div class="text33">TOTORO</div>
+                </a>
+                <a href="info.html">
+                <div class="text4">dr. Hayao Miyazako</div>
+                </a>
+            </div>
+            <div class="side-image">
+                <a href="ponyo.html">
+                <div class="text5">PONYO</div>
+                </a>
+                <a href="info.html">
+                <div class="text6">dr. Hayao Miyazako</div>
+                </a>
+            </div>
+            <div class="side-image">
+                <a href="spiritedaway.html">
+                <div class="text7">SPIRITED AWAY</div>
+                </a>
+                <a href="info.html">
+                <div class="text8">dr. Hayao Miyazako</div>
+                </a>
+            </div>
+            <div class="side-image">
+                <a href="page4.html">
+                    <div class="text9">GRAVE OF THE</div>
+                    <div class="text99">FIREFLY</div>
+                </a>
+                <a href="info.html">
+                    <div class="text10">dr. Hayao Miyazako</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-image">
+            <div class="text111">“Put down your roots in the soil. Live together with the wind.                             
+                Pass the winter with the seeds, sing in the spring with the birds.”</div>
+        </div>
+    </div>
+
+</body>
+</html>
